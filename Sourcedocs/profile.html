@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Profile</h1>
+      <form action="/profile", methods="post">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="firstname">First Name</label>
+            <input type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder={{user[0][0]}}>
+          </div>
+          <div class="user-input-box">
+            <label for="lastname">Last Name</label>
+            <input type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder={{user[0][1]}}>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder={{user[0][2]}}>
+          </div>
+          <div class="user-input-box">
+            <label for="username">User Name</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder={{user[0][4]}}>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder={{user[0][3]}}>
+          </div>
+          <div class="user-input-box">
+            <label for="age">Age</label>
+            <input type="text"
+                    id="age"
+                    name="age"
+                    placeholder={{user[0][6]}}>
+          </div>
+          <div class="user-input-box">
+            <label for="nationality">Nationality</label>
+            <input type="text"
+                    id="nationality"
+                    name="nationality"
+                    placeholder={{user[0][7]}}>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

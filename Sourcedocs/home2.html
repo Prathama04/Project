@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+    <div class="main">
+        <nav class="navbar">
+            <div class="icon">
+                <h2 class="logo">SkillSprint</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('act_kids') }}">ACTIVITIES FOR KIDS</a></li>
+                    <li><a href="{{ url_for('act_adults') }}">ACTIVITIES FOR ADULTS</a></li>
+                    <li><a href="{{ url_for('index') }}">REMINDERS</a></li>
+                    <li><a href="{{ url_for('profile') }}">PROFILE</a></li>
+                    <li><a href="{{ url_for('home') }}">LOG OUT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1>Unlock your <br><span>skills with</span> <br>SkillSprint</h1>
+            <p class="par">Explore our wide range of games<br>and enhance your skills in a fun<br> and interactive way.</p>
+
+        </div>
+    </div>
+    
+    <section class="skills">
+        <div class="container">
+            <h2 class="skills-title">Explore games like...</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="https://cdn.nerdschalk.com/wp-content/uploads/2022/02/wordle-game-logo.png" alt="Wordle" class="skill-icon">
+                    <form method="post" action="{{ url_for('home2') }}">
+                        <button type="submit" name="wordle">WORDLE</button>
+                    </form>
+                </div>
+                <div class="skill">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/838/630/344/flappy-bird-game-popular-news-wallpaper-preview.jpg" alt="Flappy Bird" class="skill-icon">
+                    <form method="post" action="{{ url_for('home2') }}">
+                        <button type="submit" name="flappy_bird">FLAPPY BIRD</button>
+                    </form>
+                </div>
+                <div class="skill">
+                    <img src="https://images.fonearena.com/blog/wp-content/uploads/2023/07/SPACE-INVADERS-World-Defense-Game.png" alt="Space Invaders" class="skill-icon">
+                    <form method="post" action="{{ url_for('home2') }}">
+                        <button type="submit" name="space_invaders">SPACE INVADERS</button>
+                    </form>
+                </div>
+                <div class="skill">
+                    <img src="https://images.saymedia-content.com/.image/t_share/MTc0NTA2NzM3NDM5NjE0OTIx/matchstick-puzzles-that-will-ignite-your-frustration.png" alt="Tower-of-hanoi" class="skill-icon">
+                    <form method="post" action="{{ url_for('home2') }}">
+                        <button type="submit" name="Tower-of-hanoi">TOWERS OF HANOI</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reminders">
+        <div class="container">
+            <div class="reminder-info">
+                <img src="https://t4.ftcdn.net/jpg/02/67/68/81/360_F_267688118_q74PlHixKsVSBZECfOUuCjNw7bJ1qrvX.jpg" alt="Reminder Image" class="reminder-image">
+                <div class="reminder-text">
+                    <h2>Get Daily Reminders</h2>
+                    <p>Never miss an activity or medication! You can receive daily reminders to help you stay on track with your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <footer class="footer">
+        <p>&copy; 2023 SkillSprint</p>
+    </footer>
+</body>
+</html>

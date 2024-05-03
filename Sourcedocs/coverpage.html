@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillsprint</title>
+</head>
+<script>
+    // script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const faqQuestions = document.querySelectorAll(".faq-question");
+  
+    faqQuestions.forEach(question => {
+      question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      });
+    });
+  });
+  
+</script>
+<style>
+    /* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    background-color: grey;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.start{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://c8.alamy.com/comp/2HDY251/painted-finger-painting-childrens-hands-painteds-2HDY251.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 5rem;
+    color: rgb(255, 0, 183);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 2rem;
+    color: rgba(118, 40, 234, 0.99);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+   
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+   
+}
+
+/* Hyperlink hover effects */
+a:hover {
+    font-size: 25px;
+    color: #ecb018; /* Change the hover color as desired */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .start {
+        margin-top: 10px;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    main {
+        height: 90vh;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 15%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 4px;
+    }
+}
+.footer_center{
+    text-align: center;
+}
+
+.faq-answer {
+    display: none;
+  }
+/* styles.css */
+
+.faq-list li {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-list li:hover {
+    background-color:#ecb018;
+
+
+}
+  
+  .faq-list li h4 {
+    margin-bottom: 0;
+  }
+  
+  .faq-answer {
+    display: none;
+  }
+  
+  .faq-list li.show-answer .faq-answer {
+    display: block;
+  }
+
+</style> 
+</head>
+<body>
+    <nav>
+        <div class="logo">
+             <div class="logo_img"><img src="https://us.123rf.com/450wm/lumut/lumut1601/lumut160100032/50663675-community-care-logo.jpg?ver=6" alt="Skillsprint Logo" width="100px" height="100px"></div>
+             <div class="logo_title">Skillsprint</div>
+        </div>
+        <div class="start">
+            <div class="Login"><a href="">login</a></div>
+            <div class="Signup"><a href="">Sign up</a></div>
+        </div>
+       
+    </nav>
+    <main>
+        <h1>SkillSprint</h1>
+        <p>Motor skills are not limited to childhood.They are the building blocks of lifelong movement and vitality. Embrace the joy of movement at any age</p>
+    </main>
+    <footer>
+        <div class="footer-content">
+          <h3 class ="footer_center">Frequently Asked Questions</h3>
+          <ul class="faq-list">
+            <li>
+              <h4 class="faq-question">What is SkillSprint?</h4>
+              <h5 class="faq-answer">SkillSprint is a user-friendly web application designed to support individuals, especially those with specific needs, in enhancing their motor skills through a variety of activities and personalized guidance.</h5>
+            </li>
+    
+            <li>
+              <h4 class="faq-question">How can I get started with SkillSprint?</h4>
+              <h5 class="faq-answer">Getting started with SkillSprint is easy! Simply sign up for an account, log in, and explore the wide range of motor skill activities tailored to your needs.</h5>
+            </li>
+    
+            <li>
+                <h4 class="faq-question">Is SkillSprint suitable for individuals with specific needs?</h4>
+                <h5 class="faq-answer">Yes, SkillSprint is designed to cater to individuals with specific motor skill needs. The application provides tailored activities and guidance to address various motor skill challenges, making it a valuable tool for diverse users.</h5>
+            </li>
+
+            <li>
+                <h4 class="faq-question">How can I use SkillSprint to enhance my motor skills?</h4>
+                <h5 class="faq-answer">To enhance your motor skills with SkillSprint, simply create an account, log in, and explore the various activities available. Choose activities that align with your specific needs and preferences. Practice regularly and follow the personalized guidance provided by the app to track your progress and improve your motor skills</h5>
+            </li>
+
+            <li>
+                <h4 class="faq-question">Can I track my progress and performance in SkillSprint activities?</h4>
+                <h5 class="faq-answer">Yes, SkillSprint provides a personalized dashboard where you can track your activity performance, view progress reports, and identify areas for improvement. The dashboard allows you to monitor your progress over time and set new goals for skill enhancement.</h5>
+            </li>
+
+            <li>
+                <h4 class="faq-question">How does SkillSprint ensure user data privacy and security?</h4>
+                <h5 class="faq-answer">SkillSprint takes user data privacy and security seriously. We employ industry-standard encryption and data protection measures to safeguard your personal information. We do not share or sell user data to third parties, and your information is handled in accordance with our privacy policy.</h5>
+            </li>
+
+            <li>
+                <h4 class="faq-question">Can I access SkillSprint on different devices like smartphones and tablets?</h4>
+                <h5 class="faq-answer">Yes, SkillSprint is designed to be responsive and accessible on various devices, including smartphones, tablets, and desktop computers. You can access the application from anywhere with an internet connection.</h5>
+            </li>
+            <li>
+                <h4 class="faq-question">Is SkillSprint accessible to people with disabilities?</h4>
+                <h5 class="faq-answer">Yes, SkillSprint aims to be inclusive and accessible to users with disabilities. We strive to adhere to web accessibility guidelines and continuously improve our application to cater to diverse user needs.</h5>
+            </li>
+            <li>
+                <h4 class="faq-question">Are there any age restrictions to use SkillSprint?</h4>
+                <h5 class="faq-answer">SkillSprint is suitable for users of all ages. However, for users under the age of 13, we require parental consent and supervision during registration and usage.</h5>
+            </li>
+            <li>
+                <h4 class="faq-question">How can I provide feedback or report issues with SkillSprint?</h4>
+                <h5 class="faq-answer">We welcome your feedback and value user input. You can provide feedback and report issues through our dedicated support portal or contact our customer support team directly via email</h5>
+            </li>
+          </ul>
+        </div>
+        <h3 class="footer_center">email-id:support@skillsprint.com</h3>
+      </footer>
+    
+     
+</body>
+</html>

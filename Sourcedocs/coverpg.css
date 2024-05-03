@@ -1,0 +1,170 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    background-color: grey;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.start{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://c8.alamy.com/comp/2HDY251/painted-finger-painting-childrens-hands-painteds-2HDY251.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 5rem;
+    color: rgb(255, 0, 183);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 2rem;
+    color: rgba(118, 40, 234, 0.99);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+   
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+   
+}
+
+/* Hyperlink hover effects */
+a:hover {
+    font-size: 25px;
+    color: #ecb018; /* Change the hover color as desired */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .start {
+        margin-top: 10px;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    main {
+        height: 90vh;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 15%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 4px;
+    }
+}
+.footer_center{
+    text-align: center;
+}
+
+.faq-answer {
+    display: none;
+  }
+/* styles.css */
+
+.faq-list li {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-list li:hover {
+    background-color:#ecb018;
+
+
+}
+  
+  .faq-list li h4 {
+    margin-bottom: 0;
+  }
+  
+  .faq-answer {
+    display: none;
+  }
+  
+  .faq-list li.show-answer .faq-answer {
+    display: block;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  

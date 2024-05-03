@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SkillSprint</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+                    <li><a href="{{ url_for('signup') }}">REGISTER</a></li>
+                </ul>
+            </div>
+
+
+        </div> 
+
+        <div class="content">
+            <h1>Unlock your <br><span>skills with</span> <br>SkillSprint</h1>
+            <p class="par">Explore our wide range of games<br>and enhance your skills in a fun<br> and interactive way.</p>
+
+        </div>
+    </div>
+    
+    <section class="skills">
+        <div class="container">
+            <h2 class="skills-title">Explore games like...</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="https://cdn.nerdschalk.com/wp-content/uploads/2022/02/wordle-game-logo.png" alt="Skill 1 Icon" class="skill-icon">
+                    <div class="skill-title">Wordle</div>
+                </div>
+                <div class="skill">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/838/630/344/flappy-bird-game-popular-news-wallpaper-preview.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    <div class="skill-title">Flappy Bird</div>
+                </div>
+                <div class="skill">
+                    <img src="https://images.fonearena.com/blog/wp-content/uploads/2023/07/SPACE-INVADERS-World-Defense-Game.png" alt="Skill 2 Icon" class="skill-icon">
+                    <div class="skill-title">Space Invaders</div>
+                </div>
+                <div class="skill">
+                    <img src="https://images.saymedia-content.com/.image/t_share/MTc0NTA2NzM3NDM5NjE0OTIx/matchstick-puzzles-that-will-ignite-your-frustration.png" alt="Skill 2 Icon" class="skill-icon">
+                    <div class="skill-title">Towers Of Hanoi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reminders">
+        <div class="container">
+            <div class="reminder-info">
+                <img src="https://t4.ftcdn.net/jpg/02/67/68/81/360_F_267688118_q74PlHixKsVSBZECfOUuCjNw7bJ1qrvX.jpg" alt="Reminder Image" class="reminder-image">
+                <div class="reminder-text">
+                    <h2>Get Daily Reminders</h2>
+                    <p>Never miss an activity or medication! You can receive daily reminders to help you stay on track with your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="activities">
+        <div class="container">
+            <div class="activity-info">
+                <img src="https://media.istockphoto.com/id/1268503773/vector/motor-skills-development-chalk-white-icons-set-on-black-background.jpg?s=612x612&w=0&k=20&c=zpq8kNfdHag9qsxPEn46sbTqUHq5UcTaxeTHv3gdtdY=" alt="Activity Image" class="activity-image">
+                <div class="activity-text">
+                    <h2>Explore Various Activities</h2>
+                    <p>Unlock your Potential Through Play: Explore, Learn, and Grow!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <footer class="footer">
+        <p>&copy; 2023 SkillSprint</p>
+    </footer>
+</body>
+</html>

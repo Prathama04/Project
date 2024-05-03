@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}" />
+    <script src="{{ url_for('static', filename='signup.js') }}" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <div class="msg">{{ msg }}</div>
+    <form action="/signup"  method="post" class="form">
+      <h1 class="text-center">Registration Form</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div class="progress-step progress-step-active" data-title="Name"></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="Personal Info"></div>
+        <div class="progress-step" data-title="Account"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="firstname">First Name</label>
+          <input type="text" placeholder="Enter your first name" name = "firstname" id="firstname" required>
+        </div>
+        <div class="input-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" placeholder="Enter your last name" name="lastname" id="lastname" required>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="number" placeholder="Enter your mobile number" name="phone" id="phone" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your email ID" name="email" id="email" required>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="age">Age</label>
+          <input type="number" placeholder = "Enter your age" name="age" id="age" required>
+        </div>
+        <div class="input-group">
+          <label for="nation">Nationality</label>
+          <input type="text" placeholder="Enter your nationality" name="nation" id = "nation" required> 
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="username">User Name</label>
+          <input type="text" placeholder="Enter your username" name = "username" id="username" required>
+      </div>
+      <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter your password" name="password" id="password" required>
+      </div>
+      <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" placeholder="Re-enter your password"name="confirmPassword" id="confirmPassword" required>
+      </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
